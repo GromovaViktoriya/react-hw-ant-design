@@ -1,0 +1,93 @@
+.App {
+    max-width: 1200px;
+    margin: 0 auto;
+    min-height: 100vh;
+}
+
+.header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #004297;
+    color: white;
+}
+
+.sider-title{
+    text-align: center;
+}
+.side-wrapper{
+    padding: 20px;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+}
+.spinner-wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #004297;
+    color: white;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.task-input{
+width: 250px;
+}
+
+.card-description{
+    text-align: start;
+    word-break: break-word;
+    white-space: pre-wrap;
+}
+.task-card{
+    width: 300px;
+    border: 1px solid rgba(183, 235, 143, 0);
+    transition: all 0.3s;
+}
+.task-card .ant-card-head-title {
+    white-space: normal;
+    word-break: break-word;
+}
+.task-card.checked {
+    background-color: #f6ffed;
+    border: 1px solid #b7eb8f;
+}
+
+
+.task-card.checked .ant-card-head,
+.task-card.checked .ant-card-actions {
+    background: transparent;
+}
+
+
+.task-card.checked .ant-card-head {
+    border-bottom: 1px solid #b7eb8f;
+}
+.task-card.checked .ant-card-actions {
+    border-top: 1px solid #b7eb8f;
+}
+
+@media (max-width: 768px) {
+    .ant-layout-sider {
+        position: absolute !important;
+        height: 100%;
+        z-index: 10;
+        box-shadow: 4px 0 15px rgba(0, 0, 0, 0.15);
+    }
+}
