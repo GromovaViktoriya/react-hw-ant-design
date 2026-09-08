@@ -5,5 +5,8 @@ import { defineConfig } from 'vite'
 export default defineConfig({
   plugins: [react()],
   base: '/react-hw-ant-design/',
+  build: {
+    chunkSizeWarningLimit: 1000
+  }
 })
 
